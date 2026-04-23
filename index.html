@@ -99,7 +99,7 @@ a:hover {
         <p>
         本人主要从事人工智能、多模态学习与计算机视觉研究，
         已在CCF A/B类会议及SCI一区/二区期刊发表论文8篇。
-        实验室具备GPU服务器资源，并拥有丰富的工业项目经验。
+        实验室具备GPU服务器资源，有丰富的工业项目支持。
         欢迎对计算机视觉、多模态学习、工业AI方向感兴趣的同学加入，
         支持高水平论文发表与工程项目实践。
         </p>
@@ -109,32 +109,89 @@ a:hover {
 </div>
 
 <!-- 教育 + 经历 -->
+<style>
+/* 教育经历区块美化样式 */
+.section {
+  margin: 40px 0;
+  max-width: 1000px;
+}
+.section h2 {
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+/* 时间线容器 */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* 条目之间的间距 */
+}
+/* 单个条目：Flex布局实现对齐，无线条 */
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap; /* 小屏幕自动换行 */
+  line-height: 1.6;
+}
+/* 定义每列固定宽度，实现上下严格对齐 */
+.timeline-item .time {
+  width: 180px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+.timeline-item .school {
+  width: 220px;
+  font-weight: 500;
+}
+.timeline-item .college {
+  width: 260px;
+  color: #34495e;
+}
+.timeline-item .major {
+  flex: 1; /* 剩余宽度自适应 */
+  color: #7f8c8d;
+}
+</style>
+
 <div class="section">
-<h2>教育与经历</h2>
-<div class="timeline">
+  <h2>Education & Internship</h2>
+  <div class="timeline">
 
-<div class="timeline-item">
-<strong>2021 - 2025</strong>   中国人民大学   博士（导师：苏冰） - 人工智能
-</div>
+    <div class="timeline-item">
+      <span class="time">2021 - 2025</span>
+      <span class="school">中国人民大学</span>
+      <span class="college">高瓴人工智能学院</span>
+      <span class="major">博士（导师：苏冰） - 人工智能</span>
+    </div>
 
-<div class="timeline-item">
-<strong>2018 - 2021</strong>   天津大学       硕士 - 电子信息
-</div>
+    <div class="timeline-item">
+      <span class="time">2018 - 2021</span>
+      <span class="school">天津大学</span>
+      <span class="college">智能与计算学部</span>
+      <span class="major">硕士（导师：徐庆） - 电子信息</span>
+    </div>
 
-<div class="timeline-item">
-<strong>2014 - 2018</strong>   西北工业大学   学士 - 计算机科学与技术
-</div>
+    <div class="timeline-item">
+      <span class="time">2014 - 2018</span>
+      <span class="school">西北工业大学</span>
+      <span class="college">计算机学院</span>
+      <span class="major">学士 - 计算机科学与技术</span>
+    </div>
 
-<div class="timeline-item">
-<strong>实习经历</strong>      中国电信人工智能研究院（多模态大模型方向）
-</div>
+    <div class="timeline-item">
+      <span class="time">实习</span>
+      <span class="school">中国电信</span>
+      <span class="college">人工智能研究院</span>
+      <span class="major">多模态大模型方向（导师：赵健）</span>
+    </div>
 
-</div>
+  </div>
 </div>
 
 <!-- 论文 -->
 <div class="section">
-<h2>Publications</h2>
+<h2>Selected Publications</h2>
 <ol>
 
 <li>
@@ -168,9 +225,9 @@ Exploring temporal concurrency for video-language representation learning.
 </li>
 
 <li>
-Jun Zhang; <strong>Zezhong Lv</strong>; Jian Zhao; et al.
+Jun Zhang <sup>&dagger</sup>; <strong>Zezhong Lv</strong> <sup>&dagger</sup>; Jian Zhao; et al.
 Beyond Similarity: Mutual Information-Guided Retrieval for In-Context Learning in VQA.
-<i>Pattern Recognition 2026</i>. (SCI一区 TOP, 共同一作)
+<i>Pattern Recognition 2026</i>. (SCI一区 TOP, <sup>&dagger</sup> 共同一作)
 </li>
 
 <li>
